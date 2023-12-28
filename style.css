@@ -50,8 +50,8 @@ body {
 
 .navbar a {
     font-size: 1.7rem;
-    color: var(--text-color);
-    font-weight: 500;
+    color: rgb(91, 89, 96);
+    font-weight: 800;
     margin-left: 3.5rem;
     transition: .3s;
 
@@ -213,4 +213,5 @@ width: 100%;
 .home-sci a:hover{
     color: var(--bg-color);
 }
+
 
