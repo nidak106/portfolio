@@ -100,9 +100,10 @@ section {
 
 .home-content .text-animate h3 {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: transparent;
-    -webkit-text-stroke: .7px var(--main-color);
+    font-weight: 600;
+    -webkit-text-stroke: 2px var(--main-color); /* WebKit/Blink browsers */
+    text-shadow: 9px var(--main-color);
+    
 }
 
 .home-content p {
