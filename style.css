@@ -254,7 +254,7 @@ section {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('/xu-haiwei-fv1EFjgIb94-unsplash.jpg');
+    background-image: url('./xu-haiwei-fv1EFjgIb94-unsplash.jpg');
     /* Replace 'your-image.jpg' with the actual path to your JPEG image */
     background-size: cover;
     background-position: center;
@@ -323,7 +323,7 @@ section {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-image: url('/xu-haiwei-_3KdlCgHAn0-unsplash.jpg');
+    background-image: url('./xu-haiwei-_3KdlCgHAn0-unsplash.jpg');
     /* Replace 'your-image.jpg' with the actual path to your JPEG image */
     background-size: cover;
     background-position: center;
