@@ -13,12 +13,13 @@
 
 @media (orientation: landscape) and (max-height: 500px) {
     .header {
-      height: 90vmax;
+        height: 90vmax;
     }
-  }
+}
+
 :root {
     --bg-color: #1d1f20;
-    --second-bg-color: #0c1013;
+    --second-bg-color: #252627;
     --text-color: #f8fafb;
     --main-color: #5d9981;
 }
@@ -85,8 +86,8 @@ section {
     align-items: center;
     padding: 0 9%;
     background: url('./WhatsApp\ Image\ 2023-12-28\ at\ 3.00.05\ PM.jpeg') no-repeat;
-    background-size:cover;
-    background-position:center; 
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
 }
 
@@ -108,9 +109,10 @@ section {
 .home-content .text-animate h3 {
     font-size: 2.5rem;
     font-weight: 600;
-    -webkit-text-stroke: 2px var(--main-color); /* WebKit/Blink browsers */
-    
-    
+    -webkit-text-stroke: 2px var(--main-color);
+    /* WebKit/Blink browsers */
+
+
 }
 
 .home-content p {
@@ -143,48 +145,53 @@ section {
     color: var(--bg-color);
     z-index: 1;
     overflow: hidden;
-transition: .5s;
+    transition: .5s;
 }
-.btn-box .btn:nth-child(2){
-    background:transparent;
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
     color: var(--main-color);
 }
 
-.btn-box .btn:nth-child(2):hover{
+.btn-box .btn:nth-child(2):hover {
     color: var(--bg-color);
 
 }
-.btn-box .btn:hover{
+
+.btn-box .btn:hover {
     color: var(--main-color);
 }
-.btn-box .btn:nth-child(2)::before{
+
+.btn-box .btn:nth-child(2)::before {
     background-color: var(--main-color);
 }
 
-.btn-box .btn::before{
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-width: 0;
-height: 100%;
-background:var(--bg-color);
-z-index: -1;
-transition: .5s;
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
 }
 
-.btn-box .btn:hover::before{
-    width:100%;
+.btn-box .btn:hover::before {
+    width: 100%;
 
 }
-.home-sci{
+
+.home-sci {
     position: absolute;
     bottom: 1rem;
-    width:170px;
+    width: 170px;
     display: flex;
     justify-content: space-between;
 }
-.home-sci a{
+
+.home-sci a {
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -201,7 +208,7 @@ transition: .5s;
     transition: .5s;
 }
 
-.home-sci a::before{
+.home-sci a::before {
     content: ' ';
     position: absolute;
     top: 0;
@@ -212,12 +219,179 @@ transition: .5s;
     z-index: -1;
     transition: .5s;
 }
-.home-sci a:hover:before{
-width: 100%;
+
+.home-sci a:hover:before {
+    width: 100%;
 
 }
-.home-sci a:hover{
+
+.home-sci a:hover {
     color: var(--bg-color);
 }
 
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
 
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.circle-spin {
+    color: var(--main-color);
+
+}
+
+.about {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/xu-haiwei-fv1EFjgIb94-unsplash.jpg');
+    /* Replace 'your-image.jpg' with the actual path to your JPEG image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.about-img {
+    position: relative;
+    width: 18rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid rgb(86, 75, 11);
+    border-bottom: .2rem solid rgb(86, 75, 11);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.hr {
+    color: var(--main-color);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+.btn-box.btns a::before {
+    background: var(--second-bg-color);
+
+}
+
+.education {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('/xu-haiwei-_3KdlCgHAn0-unsplash.jpg');
+    /* Replace 'your-image.jpg' with the actual path to your JPEG image */
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.education .education-column {
+    flex: 1 1 40rem;
+}
+
+.education-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+
+}
+
+.education-column .education-box {
+    border-left: .2rem solid var(--main-color);
+}
+
+.education-box .education-content {
+    position: relative;
+    padding-left: 2rem;
+}
+.education-box .education-content::before{
+    content: '';
+    width: 2rem;
+    left: -1.1rem;
+    height: 2rem;
+    position: absolute;
+    top: 0;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.education-content .content {
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.education-content .content .year{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.education-content .content .year i{
+padding-right: .5rem;
+}
+
+.education-content .content h3{
+    font-size: 2rem;
+}
+
+.education-content .content h4{
+    font-size: 1.5rem;
+}
